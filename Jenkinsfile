@@ -1,10 +1,6 @@
 pipeline {
 
-    agent { label 'java-agent' }
-
-    triggers {
-        cron('H/2 * * * *')
-    }
+    agent any
 
     stages {
 
